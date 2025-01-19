@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+body .bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 600px;
+    /* height: 600px; */
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 70px 40px rgba(140,105,145,0.51);
+    border: 2px solid white;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
+}
+
+.faq h1 {
+    font-size: 3rem;
+}
+
+.accordion {
+    height: 100%;
+    margin: 1rem;
+}
+
+.accordion .bottom p {
+    padding: 1rem 0;
+    color: rgb(136, 136, 136);
+}
+
+.bottom {
+    /* opacity: 0; */
+}
+
+.accordion .top:hover {
+    cursor: pointer;
+    color: hsl(293, 16.00%, 49.00%);
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.top {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.top p {
+    font-weight: 700;
+}
+
